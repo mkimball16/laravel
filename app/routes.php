@@ -13,16 +13,6 @@
 
 Route::get('/', function()
 {
-	return 'Hello World!';
-	//return View::make('hello');
+	return View::make('hello');
 });
 
-Route::get('/howdy', function()
-{
-	return "Howdy";
-});
-
-Route::get('/books/{category}', function($category)
-{
-	return "Here are all the books in the category:" ".category";
-});
